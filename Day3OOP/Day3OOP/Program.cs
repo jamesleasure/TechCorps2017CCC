@@ -28,6 +28,14 @@ namespace Day3OOP
             car2.MSRP = 5200f;
             float commissionCar2 = car2.sellCar("Justin", 4900f);
 
+            Console.WriteLine("Ani sold a " + car1.make + " " +
+                car1.model + " and received $" + commissionCar1 +
+                " for his commission.");
+
+            Console.WriteLine("Justin sold a " + car2.make + " " +
+                car2.model + " and received $" + commissionCar2 +
+                " for his commission.");
+
 
         }
     }
