@@ -34,13 +34,16 @@ namespace ReviewAndDebug
             {
                 System.Console.Write("Please Enter Student Name (q to quit) : ");
                 String student = System.Console.ReadLine();
-                students.Add(student);
 
                 // If the user types "q", break the loop
                 if (student == "q")
                 {
                     keepAddingStudents = false;
                     break;
+                }
+                else
+                {
+                    students.Add(student);
                 }
 
                 System.Console.WriteLine("Current number of students: " + students.Count);
@@ -52,9 +55,9 @@ namespace ReviewAndDebug
         static void printGroups(int groupSize, List<string> students)
         {
             int currentGroupSize = 0;
-            int currentGroupNumber = 0;
+            int currentGroupNumber = 1;
 
-            for (int i = 0; i <= students.Count; i++)
+            for (int i = 0; i < students.Count; i++)
             {
                 String student = students[i];
                 // If we are starting a new group, print out the group header
