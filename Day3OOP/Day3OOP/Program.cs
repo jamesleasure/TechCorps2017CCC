@@ -22,6 +22,12 @@ namespace Day3OOP
             car2.color = "Black";
             car2.year = 2007;
 
+            car1.MSRP = 9000f;
+            float commissionCar1 = car1.sellCar("Ani", 8000f);
+
+            car2.MSRP = 5200f;
+            float commissionCar2 = car2.sellCar("Justin", 4900f);
+
 
         }
     }
