@@ -10,6 +10,7 @@ namespace ReviewAndDebug
     {
         static void Main(string[] args)
         {
+            //
             System.Console.WriteLine("Welcome to the 'Student Grouper 1.0'\n");
             System.Console.WriteLine("This application takes in a list of students and creates groups of them based on the group size specified.\n\n");
 
